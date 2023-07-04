@@ -3,7 +3,22 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "首页"
+			}
+		}, {
+			"path": "pages/index/category",
+			"style": {
+				"navigationBarTitleText": "分类"
+			}
+		}, {
+			"path": "pages/index/cart",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		}, {
+			"path": "pages/index/my",
+			"style": {
+				"navigationBarTitleText": "我的"
 			}
 		}
 	],
@@ -12,5 +27,34 @@
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#C0C4CC",
+		"selectedColor": "#FA436A",
+		"list": [{
+				"iconPath": "static/tab-home.png",
+				"selectedIconPath": "static/tab-cart-current.png",
+				"text": "首页",
+				"pagePath": "pages/index/index"
+			},
+			{
+				"iconPath": "static/tab-category.png",
+				"selectedIconPath": "static/tab-category-current.png",
+				"text": "分类",
+				"pagePath": "pages/index/category"
+			},
+			{
+				"iconPath": "static/tab-cart.png",
+				"selectedIconPath": "static/tab-cart-current.png",
+				"text": "购物车",
+				"pagePath": "pages/index/cart"
+			},
+			{
+				"iconPath": "static/tab-my.png",
+				"selectedIconPath": "static/tab-my-current.png",
+				"text": "我的",
+				"pagePath": "pages/index/my"
+			}
+		]
 	}
 }
