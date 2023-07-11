@@ -20,6 +20,12 @@
 			"style": {
 				"navigationBarTitleText": "我的"
 			}
+		}, {
+			"path": "pages/auth/app/index",
+			"style": {
+				"navigationBarTitleText": "用户登录"
+			}
+
 		}
 	],
 	"globalStyle": {
