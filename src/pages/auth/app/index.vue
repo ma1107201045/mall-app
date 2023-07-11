@@ -1,13 +1,30 @@
 <template>
-	<view class="content">
-		<image class="logo" src="/static/logo.png" />
-		<button class="wx-login-button" type="default">微信用户一键登录</button>
-		<text class="other-login-text">其他登录方式</text>
+	<view class="content" @click="test">
+		<view>
+			<image class="logo" src="/static/logo.png" />
+		</view>
+		<view>
+			<button class="wx-login-button" type="default">微信用户一键登录</button>
+		</view>
+		<view>
+			<button class="wx-login-button" type="default">微信用户一键登录</button>
+		</view>
+		<view>
+			<text class="other-login-text">其他登录方式</text>
+			<view>
+				<image src="/static/logo.png" />
+				<text>账号登录</text>
+			</view>
+		</view>
 	</view>
 </template>
 
 <script setup lang="ts">
-
+	import AppApi from '@/api/auth/app';
+	let appApi = AppApi.getInstance();
+	let test = function () {
+		appApi.login({})
+	}
 </script>
 
 <style>
@@ -33,10 +50,11 @@
 		color: #C0C4CC;
 		height: 90rpx;
 		width: 660rpx;
+		text-align: center;
 	}
 
 	.other-login-text {
-		 position:absolute;
-		 bottom: 200rpx;
+		position: absolute;
+		bottom: 200rpx;
 	}
 </style>
