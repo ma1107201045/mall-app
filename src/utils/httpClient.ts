@@ -23,7 +23,6 @@ const HttpClient = (httpConfig : HttpConfig) => {
 					icon: "none",
 					title: '服务响应失败'
 				});
-				console.error(err);
 				reject(err);
 			},
 			complete() {
