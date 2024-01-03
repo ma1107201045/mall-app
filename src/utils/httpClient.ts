@@ -1,6 +1,6 @@
 import type HttpConfig from "@/types/httpConfig";
 const baseUrl = "http://localhost"
-const HttpClient = (httpConfig : HttpConfig) => {
+const HttpClient = (httpConfig : HttpConfig) : Promise<any> => {
 	let token = uni.getStorageSync("token");
 	let Authorization = token ? "Bearer " + token : "";
 	return new Promise((resolve, reject) => {
